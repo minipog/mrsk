@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+}
+
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@layer base {
+  body {
+    @apply min-h-screen bg-background text-foreground grid place-content-center;
+  }
+
+  h1 {
+    @apply text-6xl text-balance leading-tight font-semibold;
+  }
+
+  h2 {
+    @apply text-4xl text-balance leading-tight font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl leading-tight font-medium;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-pretty;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
