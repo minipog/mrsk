@@ -14,10 +14,8 @@ Comes preconfigured with strict TypeScript, React Compiler, and a clean ESLint s
 ## 🚀 Getting Started
 
 ```bash
-npx degit minipog/mrsk#main <my-project>
+npm create mrsk@latest [my-app]
 ```
-
-_In case rimraf errors, **make sure you're in the correct folder** and run `npx rimraf .git`_
 
 ```bash
 npm install
