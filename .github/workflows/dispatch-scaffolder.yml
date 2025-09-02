@@ -1,0 +1,21 @@
+name: Dispatch Scaffolder Release
+on:
+  push:
+    tags: ['v*.*.*']
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify scaffolder repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.SCAFFOLDER_PAT }}
+          repository: minipog/create-mrsk
+          event-type: template-released
+          client-payload: |
+            {
+              "version": "${{ github.ref_name }}",
+              "template_repo": "${{ github.repository }}",
+              "template_sha": "${{ github.sha }}"
+            }
