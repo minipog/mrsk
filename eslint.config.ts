@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
 import importPlugin from 'eslint-plugin-import'
 import reactHooks from 'eslint-plugin-react-hooks'
@@ -6,7 +7,7 @@ import reactX from 'eslint-plugin-react-x'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
 
-export default tseslint.config(
+export default defineConfig([
   { ignores: ['dist', 'eslint.config.*'] },
   {
     files: ['**/*.{ts,tsx}'],
@@ -49,5 +50,5 @@ export default tseslint.config(
     settings: {
       'import/resolver': { typescript: true },
     },
-  }
-)
+  },
+])
