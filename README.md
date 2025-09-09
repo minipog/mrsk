@@ -94,33 +94,33 @@ _ThemeProvider and cn are adapted from [shadcn/ui](https://ui.shadcn.com)._
 ```jsonc
 {
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.12",
+    "@tailwindcss/vite": "^4.1.13",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.542.0",
+    "lucide-react": "^0.543.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.12"
+    "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
-    "@eslint/js": "^9.34.0",
-    "@types/node": "^24.3.0",
+    "@eslint/js": "^9.35.0",
+    "@types/node": "^24.3.1",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",
     "babel-plugin-react-compiler": "^19.1.0-rc.3",
-    "eslint": "^9.34.0",
+    "eslint": "^9.35.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react-hooks": "^6.0.0-rc.1",
     "eslint-plugin-react-refresh": "^0.4.20",
-    "eslint-plugin-react-x": "^1.52.9",
+    "eslint-plugin-react-x": "^1.53.0",
     "globals": "^16.3.0",
-    "tw-animate-css": "^1.3.7",
+    "tw-animate-css": "^1.3.8",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.41.0",
-    "vite": "^7.1.4"
+    "typescript-eslint": "^8.43.0",
+    "vite": "^7.1.5"
   }
 }
 ```
